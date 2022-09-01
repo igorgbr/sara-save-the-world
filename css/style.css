@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.refresh-button {
+  visibility: hidden;
+  position: absolute;
+  top: 200px;
+  left: 350px;
+  width: 140px;
+}
+.start {
+  position: absolute;
+  top: 200px;
+  left: 350px;
+  width: 140px;
+}
+
+.points {
+  font-family: 'Silkscreen', cursive;
+  color: aliceblue;
+}
+.game-board {
+  width: 100%;
+  height: 500px;
+  border-bottom: 15px solid rgb(66, 42, 10);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  /* background: linear-gradient(rgb(99, 58, 39),  #3b116b); */
+  background-image: url('../images/gothic/Gothic-Horror-Files/PNG/layers/town.png');
+  background-size: cover;
+}
+
+.bg {
+  position: absolute;
+  width: 1000px;
+  height: 500px;
+  top: 0;
+  animation: clouds-animation 20s infinite;
+  background-image: url('../images/gothic/Gothic-Horror-Files/PNG/layers/clouds.png');
+  background-size: cover;
+  background-repeat: repeat;
+}
+.bg-down {
+  position: absolute;
+  top: 500px;
+  width: 1000px;
+  height: 390px;
+  background-image: linear-gradient(rgb(31, 6, 6), rgb(10, 17, 17));
+}
+.skull {
+  position: absolute;
+  bottom: 50px;
+  width: 80px;
+  animation: none;
+}
+
+.mario {
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+}
+
+.girl {
+  opacity: 0;
+  position: absolute;
+  bottom: -5px;
+  width: 150px;
+}
+
+.jump {
+  width: 120px;
+  left: 40px;
+  animation: jump 500ms ease-out;
+}
+
+.clouds {
+  position: absolute;
+  width: 1450px;
+  animation: clouds-animation 20s infinite;
+}
+
+@keyframes skull-animation {
+  from {
+    right: -450px;
+  }
+
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes clouds-animation {
+  0% {
+    right: -80px;
+  }
+
+  40% {
+    right: 0px;
+  }
+
+  60% {
+    right: 5px;
+  }
+
+  60% {
+    right: -80px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+
+  40% {
+    bottom: 180px;
+  }
+
+  50% {
+    bottom: 180px;
+  }
+
+  60% {
+    bottom: 180px;
+  }
+  100% {
+    bottom: 0;
+  }
+}

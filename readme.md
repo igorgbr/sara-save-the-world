@@ -6,7 +6,7 @@ Descrição: Um jogo de exemplo criado para ser alterado de acordo com sua criat
 
 Description: A sample game created to be altered according to your creativity.
 
-<a href="">
+<a href="https://www.youtube.com/watch?v=nBbADuus0ek">
 <img src = "images/readme.png" >
 <br>
 Video do projeto no canal - Coisa_de_dev
